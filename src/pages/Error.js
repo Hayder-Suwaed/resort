@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Error = () => {
-    return (
-        <div>
-            Hello from error page
-        </div>
-    )
-}
+  return <div>Hello from error page</div>;
+};
 
-export default Error
+export default Error;
