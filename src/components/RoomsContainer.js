@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import RoomsFilter from "./RoomsFilter";
 import RoomsList from "./RoomsList";
 import { withRoomConsumer } from "../context";
@@ -10,11 +10,10 @@ function RoomContainer({ context }) {
     return <Loading />;
   }
   return (
-    <div>
-      Hello from romms container
+    <Fragment>
       <RoomsFilter rooms={rooms} />
       <RoomsList rooms={sortedRooms} />
-    </div>
+    </Fragment>
   );
 }
 
